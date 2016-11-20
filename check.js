@@ -21,7 +21,7 @@ function check(packName, latestVersion, params) {
         catch (e) {
             console.error(e);
         }
-        setTimeout(check.bind(packName, latestVersion, params), params.timeout);
+        setTimeout(check.bind(undefined, packName, latestVersion, params), params.timeout);
     });
 }
 Object.defineProperty(exports, "__esModule", { value: true });

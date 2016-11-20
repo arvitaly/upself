@@ -11,6 +11,6 @@ async function check(packName: string, latestVersion: string, params: IParams) {
     } catch (e) {
         console.error(e);
     }
-    setTimeout(check.bind(packName, latestVersion, params), params.timeout);
+    setTimeout(check.bind(undefined, packName, latestVersion, params), params.timeout);
 }
 export default check;
