@@ -4,6 +4,8 @@ Library check every N seconds npm registry for new version of package, which req
 
 Then start `npm install packName -g`. 
 
+And if update made without errors, restart process.
+
 That is all 🎅.
 
 [![Build Status](https://travis-ci.org/arvitaly/upself.svg?branch=master)](https://travis-ci.org/arvitaly/upself)

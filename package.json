@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "child-process-promise": "^2.2.0",
+    "find-root": "^1.0.0",
     "npm": "^4.0.2",
     "pify": "^2.3.0"
   }

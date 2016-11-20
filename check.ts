@@ -6,7 +6,8 @@ async function check(packName: string, latestVersion: string, params: IParams) {
         let newVersion = await getLastVersion(packName);
         if (newVersion !== latestVersion) {
             await update(packName);
-            latestVersion = newVersion;
+            process.exit(0);
+            return;
         }
     } catch (e) {
         console.error(e);

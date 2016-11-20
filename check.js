@@ -15,7 +15,8 @@ function check(packName, latestVersion, params) {
             let newVersion = yield get_last_version_1.default(packName);
             if (newVersion !== latestVersion) {
                 yield update_1.default(packName);
-                latestVersion = newVersion;
+                process.exit(0);
+                return;
             }
         }
         catch (e) {
