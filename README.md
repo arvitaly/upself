@@ -8,6 +8,8 @@ And if update made without errors, restart process.
 
 That is all 🎅.
 
+!!! Now not have tests, only type-checking
+
 [![Build Status](https://travis-ci.org/arvitaly/upself.svg?branch=master)](https://travis-ci.org/arvitaly/upself)
 [![Coverage Status](https://coveralls.io/repos/github/arvitaly/upself/badge.svg?branch=master)](https://coveralls.io/github/arvitaly/upself?branch=master)
 [![npm version](https://badge.fury.io/js/upself.svg)](https://badge.fury.io/js/upself)
