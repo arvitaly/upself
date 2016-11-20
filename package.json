@@ -1,0 +1,33 @@
+{
+  "name": "upself",
+  "version": "0.0.1",
+  "description": "Update global npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && tslint --project=tsconfig.json && istanbul cover node_modules/jasmine/bin/jasmine.js",
+    "watch:test": "nodemon --exec jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvitaly/upself.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvitaly/upself/issues"
+  },
+  "homepage": "https://github.com/arvitaly/upself#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.15",
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.4.1",
+    "tslint": "^4.0.1",
+    "typescript": "^2.0.10"
+  },
+  "dependencies": {
+    "child-process-promise": "^2.2.0",
+    "npm": "^4.0.2",
+    "pify": "^2.3.0"
+  }
+}
