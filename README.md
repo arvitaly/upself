@@ -4,7 +4,7 @@ Library check every N seconds npm registry for new version of package, which req
 
 Then start `npm install packName -g`. 
 
-And if update made without errors, restart process.
+And if update made without errors, restart process. Upself use module `cluster` and start app in forked process.
 
 That is all 🎅.
 
@@ -22,8 +22,12 @@ That is all 🎅.
 
 # Usage
 
-    import upself from "upself";    
-    upself({timeout: 20000}); // check new version every 20 seconds
+    import upself from "upself";  
+
+    // check new version every 20 seconds  
+    upself({timeout: 20000})(()=>{
+        // here app's code        
+    }); 
 
 # Tests
 
