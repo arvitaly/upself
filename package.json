@@ -1,6 +1,6 @@
 {
   "name": "upself",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Update global npm package",
   "main": "index.js",
   "scripts": {
