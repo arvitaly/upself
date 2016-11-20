@@ -7,14 +7,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments)).next());
     });
 };
+const semver = require("semver");
 const get_last_version_1 = require("./get-last-version");
 const update_1 = require("./update");
 function check(packName, latestVersion, params) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             let newVersion = yield get_last_version_1.default(packName);
-            if (newVersion !== latestVersion) {
+            if (newVersion !== latestVersion && semver.gt(newVersion, latestVersion)) {
+                console.log("Found new version " + packName + "@" + newVersion, " start updating...");
                 yield update_1.default(packName);
+                console.log("Updated successfully, process will restarted");
                 process.exit(0);
                 return;
             }

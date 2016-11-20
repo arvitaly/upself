@@ -18,7 +18,14 @@ const upself = (params?: IParams) => {
             findRoot(module.parent["paths"][0]), // tslint:disable-line no-string-literal
             "package.json");
         const pack = require(packageJSONPath);
+        console.log("Start checking " + pack.name + " with current version " + pack.version +
+            ", timeout of checking " + params.timeout + "ms");
         check(pack.name, pack.version, params);
     }
+    return (cb: () => any) => {
+        if (!cluster.isMaster) {
+            cb();
+        }
+    };
 };
 export default upself;
