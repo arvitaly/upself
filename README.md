@@ -1,8 +1,10 @@
 # upself ♻ self-update global npm package.
   
-Library check event N seconds npm registry for new version of package, which required `upself`.
+Library check every N seconds npm registry for new version of package, which required `upself`.
 
-Then start `npm install packName -g`. It is all.
+Then start `npm install packName -g`. 
+
+That is all 🎅.
 
 [![Build Status](https://travis-ci.org/arvitaly/upself.svg?branch=master)](https://travis-ci.org/arvitaly/upself)
 [![Coverage Status](https://coveralls.io/repos/github/arvitaly/upself/badge.svg?branch=master)](https://coveralls.io/github/arvitaly/upself?branch=master)
