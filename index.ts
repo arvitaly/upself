@@ -4,7 +4,7 @@ import check from "./check";
 export interface IParams {
     timeout?: number;
 }
-const upself = (params: IParams) => {
+const upself = (params?: IParams) => {
     params = params || {};
     params.timeout = params.timeout || 15000;
     const packageJSONPath = path.join(path.resolve(
