@@ -29,6 +29,24 @@ That is all 🎅.
         // here app's code        
     }); 
 
+# Example
+
+Usually, upself used with bin-script of node package
+
+In package.json
+
+    "bin":{ "globalName": "./bin.js" }
+
+In bin.js
+
+    #!/usr/bin/env node
+
+    var upself = require('upself').default;
+    upself()(() => {
+        require('./app');
+    });
+
+
 # Tests
 
     npm install
