@@ -1,4 +1,6 @@
 # upself ♻ self-update global npm package.
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/arvitaly/upself.svg)](https://greenkeeper.io/)
   
 Library check every N seconds npm registry for new version of package, which required `upself`.
 
